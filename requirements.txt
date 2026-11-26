@@ -1,0 +1,11 @@
+# dependencies:
+  - openai
+  - langchain
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - nltk
+  - spacy
+  - transformers
