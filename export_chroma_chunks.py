@@ -10,7 +10,6 @@ Run from the project root:
 Produces chunks_dump.json — every chunk's id, text, and metadata — so you can
 scan them (e.g. to hand-pick ideal_context for the faithfulness dataset).
 """
-
 import json
 from src.retriever import load_store   # reuse the retriever's store loader
 
