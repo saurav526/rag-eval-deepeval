@@ -16,7 +16,8 @@ There are two entry points:
 Both share the exact same prompt, model, and chain — the only difference is
 that one waits for the whole answer and the other emits it token-by-token.
 """
-
+# THIS IS THE GENERATOR: it produces the answer from the query + context. It does NOT retrieve the context — that is the retriever's job. The generator is a
+# separate component from the retriever, so you can swap in your own generator if you want. The only requirement is that it takes a query and a list of context chunks and returns an answer string (or streams it). 
 
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
