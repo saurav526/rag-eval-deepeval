@@ -13,6 +13,10 @@ is purely the generator's fault --- the context was already correct.
     python -m evals.eval_generator
 """
 
+
+# this is  the eval file for generator that generates the answer on the basis of contect form retriver while keeping the faithfulness and relevance of the answer in mind. It uses the langchain framework to generate the answer from the context and query provided by the user. The prompt is designed to ensure that the answer is grounded in the context and does not include any outside knowledge.
+
+
 from dotenv import load_dotenv
 
 from deepeval import evaluate
